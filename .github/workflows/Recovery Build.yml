@@ -207,7 +207,8 @@ jobs:
           workspace/image_info
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.img
           workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/${{ github.event.inputs.BUILD_TARGET }}.tar
-          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/SHRP_**
+          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/SHRP**
+          workspace/out/target/product/${{ github.event.inputs.DEVICE_NAME }}/PBRP**
         name: ${{ github.event.inputs.DEVICE_NAME }}_${{ github.event.inputs.MANIFEST_BRANCH }}
         tag_name: ${{ github.run_id }}
         body: |
