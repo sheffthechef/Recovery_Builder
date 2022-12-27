@@ -137,6 +137,7 @@ jobs:
       run: |
         chmod +x ${{ github.event.inputs.DEVICE_PATH }}/mkbootimg
       working-directory: ${{ steps.pwd.outputs.pwd }}
+      continue-on-error: true
       
     - name: Clone common tree
       if: |
